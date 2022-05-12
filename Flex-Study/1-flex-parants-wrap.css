@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Central alignment without Flex */
+/* .box {
+  background-color: yellowgreen;
+  color: white;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* Central alignment with Flex */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-box {
+  background-color: lightyellow;
+  color: black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}

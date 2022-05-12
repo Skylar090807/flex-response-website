@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid #000;
+
+  display: flex;
+
+  /* justify-content: 속성 종류 */
+
+  justify-content: center;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+
+  /* display: flex; 와 justify-content: center; 하지 않고 중앙 정렬하기 */
+  /* text-align: center; */
+}
+
+.child {
+  background: lightyellow;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin: 1em;
+
+  /* diplay: flex; 사용하지 않고 정렬하기 */
+  /* justify-content: center;를 사용하지 않을 때 */
+  /* margin: auto; */
+
+  /* justify-content: flex-start;를 사용하지 않을 때 */
+  /* float: left; */
+
+  /* justify-content: flex-end;를 사용하지 않을 때 */
+  /* float: right; */
+
+  /* display: flex; 와 justify-content: center; 하지 않고 중앙 정렬하기 */
+  /* display: inline-block; */
+}

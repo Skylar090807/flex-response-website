@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 부모 요소에 display: flex; 해주면 
+   부모 요소에 overflow: hidden;
+   자식 요소에 float: left; 해준 것과 같은 효과. 
+*/
+
+.parent {
+  /* flex 사용 */
+  /* display: flex; */
+
+  /* display: inline-flex해주면 자식 요소의 컨텐츠 길이에 맞게 border가 줄어든다. */
+  display: inline-flex;
+
+  border: 10px solid lightgreen;
+
+  /* display: flex; 사용 하지 않을 때  */
+  /* overflow: hidden; */
+}
+
+.child {
+  background-color: lightyellow;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 2em;
+  margin: 1em;
+
+  /* display: flex; 사용 하지 않을 때  */
+  /* float: left; */
+}
