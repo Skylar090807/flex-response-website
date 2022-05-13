@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid grey;
+  display: flex;
+
+  /* flex-direction: row는 display:flex; 해주면 default로 적용. 따로 작성할 필요 없다. */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+}
+.child {
+  background: #000;
+  color: #fff;
+  margin: 1em;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}

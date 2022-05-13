@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parent div {
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 100px;
+
+  /* flex-grow는 정수만 줄 수 있다. */
+  /* 부모에 flex-wrap:wrap;을 해주어 일정 너비 이하로 줄어들면 아래로 떨어지게 해준 뒤
+     자식 요소 전체에 flex-grow:1; flex-basis:500px;로 주면 중간 크기에서 윗줄2 아래줄 1로 떨어지고,
+     더 작아지면 하나씩 수직 정렬되는 것을 볼 수 있다.
+  */
+  /* flex-grow: 1; */
+  /* min-width 500px 대신 flex-basis를 하면 스크롤이 생기지 않고 500px에서 더 작아지지 않는다. */
+  /* flex-basis: 500px; */
+
+  /* min-width를 하면 지정한 너비보다 줄어들 때 스크롤이 생긴다. */
+  /* min-width: 500px; */
+
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  flex: 1 400px;
+}
+
+/* flex-shrink는 부모 요소의 너비가 일정 이하로 줄어들 때 자식 요소 아이템들이 어떤 비율로 축소 될 것인지 지정하는 것. */
+
+.child1 {
+  background: #000;
+  color: #fff;
+  /* flex-shrink: 3; */
+}
+
+.child2 {
+  background: darkgrey;
+  color: #fff;
+  /* flex-shrink: 2; */
+}
+
+.child3 {
+  background: #000;
+  color: #fff;
+  /* flex-shrink: 1; */
+}

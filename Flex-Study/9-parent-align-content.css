@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid grey;
+  display: flex;
+
+  /* align-content 하기 위해서 default 적용되어 있는 flex-wrap: nowrap;을 
+     warp;으로 설정해준다. height를 할당해줘야 한다.
+  */
+  flex-wrap: wrap;
+  height: 600px;
+  /* align-content:stretch; 는 default 적용되어있다. */
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+}
+
+.child {
+  background: #000;
+  color: #fff;
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}

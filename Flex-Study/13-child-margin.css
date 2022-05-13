@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid darkgrey;
+  display: flex;
+  justify-content: center;
+}
+
+.child {
+  background: #000;
+  height: 7em;
+  width: 7em;
+  color: #fff;
+  text-align: center;
+  line-height: 7em;
+
+  /* 자식요소 전체에 margin:auto;를 주면 부모 요소에 justify-content: space-around;준 것과 같다  */
+  /* margin: auto; */
+}
+
+.child1 {
+  /* child1을 맨 왼쪽으로 두고 나머지 형제요소를 오른쪽으로 끝까지 밀고 싶을 때 */
+  /* margin-right: auto; */
+}
+.child2 {
+  background: grey;
+}
+.child3 {
+  /* child3을 가운데 두고 나머지 형제 요소를 양쪽 끝까지 밀고 싶을 때 */
+  margin: auto;
+}
+.child4 {
+  background: grey;
+  /* child4 까지는 왼쪽으로 두고 나머지는 오른쪽 끝까지 밀고 싶을 때*/
+  /* margin-right: auto; */
+}
+.child5 {
+}

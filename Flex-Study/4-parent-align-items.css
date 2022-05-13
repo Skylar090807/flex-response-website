@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid lightgreen;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: baseline; */
+
+  /* align-items가 없고, 자식 요소에 높이가 할당되지 않으면 자식요소는 부모 요소의 길이 만큼 꽉 채우게 된다.
+     만약 align-items를 주면서 부모 요소 높이에 꽉 채우고 싶다면 align-items:stretch;를 하면 된다.
+     align-itmes: stretch;를 쓸 때도 역시 자식 요소에 높이를 할당하지 않아야 한다.  
+   */
+  align-items: stretch;
+}
+
+.child {
+  background: lightblue;
+  width: 200px;
+  /* height: 100px; */
+  line-height: 100px;
+  text-align: center;
+  margin: 1em;
+}

@@ -1,0 +1,25 @@
+header {
+  background: #eee;
+  border: 5px solid darkgrey;
+  display: flex;
+}
+
+header div {
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+}
+
+.logo {
+  background: purple;
+  margin-right: auto;
+}
+.gnb {
+  background: #000;
+}
+.lnb {
+  background: grey;
+}

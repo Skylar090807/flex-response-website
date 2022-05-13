@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  border: 5px solid grey;
+  display: flex;
+
+  /* flex-flow는 flex-direction과 flex-wrap을 함께 적용한 것이다. */
+  flex-flow: row wrap;
+  /* flex-flow: row nowrap; */
+}
+
+.child {
+  background: #000;
+  color: #fff;
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}

@@ -1,0 +1,33 @@
+.frame {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: lightblue;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+section {
+  background: lightyellow;
+  height: 300px;
+  flex: 0.9;
+
+  display: flex;
+  justify-content: center;
+  align-item: center;
+}
+
+section div {
+  background: grey;
+  height: 200px;
+  flex: 0.8;
+  align-self: center;
+
+  text-align: center;
+  line-height: 200px;
+}

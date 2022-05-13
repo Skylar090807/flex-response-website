@@ -1,0 +1,23 @@
+.container {
+  border: 5px solid #000;
+  display: flex;
+}
+
+.box {
+  border: 5px solid lightpink;
+  display: flex;
+  flex: 1;
+}
+
+.inner {
+  height: 200px;
+  flex: 1;
+}
+
+.inner-div1 {
+  background: lightblue;
+}
+
+.inner-div2 {
+  background: lightyellow;
+}
