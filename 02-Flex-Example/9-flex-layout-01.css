@@ -1,0 +1,72 @@
+body {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100%;
+}
+
+header {
+  background: #a1905f;
+  flex: 1;
+  padding: 2em;
+  height: 100px;
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex: 1;
+  color: #756844;
+}
+
+article,
+aside,
+nav {
+  /* 가운데 section 컨텐츠의 height를 할당할 때
+     header와 footer에 각각 height: 100px; 할당 후
+     header와 footer에 할당된 높이는 총 200px이므로, 
+     calc(100vh - 200px); 해주면 딱 맞는 높이로 할당된다.
+  */
+  height: calc(100vh - 200px);
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section article {
+  background: #e9eaed;
+  flex: 6;
+}
+
+section aside {
+  background: #efebe4;
+  flex: 2;
+}
+
+section nav {
+  background: #b5b1a6;
+  flex: 2;
+}
+
+footer {
+  background: #a1905f;
+  flex: 1;
+  padding: 2em;
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

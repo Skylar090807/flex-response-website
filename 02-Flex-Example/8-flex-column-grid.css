@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.child {
+  background: lightblue;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin: 3px;
+  flex: 1;
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

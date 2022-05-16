@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* reset CSS */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.container {
+  /* 이미 column 상태로 있기 때문에 굳이 flex-direction:column;할 필요 없지만
+     하위 자식요소 section이 스크롤 없이 100% 차지하기 위해서는 flex-direction:column;
+     상태에서 height: 100%;를 줘야한다.
+  */
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background: lightyellow;
+  padding: 2em;
+}
+
+.banner {
+  background: lightgreen;
+  padding: 2em;
+}
+
+section {
+  display: flex;
+
+  /* section 하위 article들이 시작점 부터 높이 전체를 차지하기 위해서
+     section의 부모 .container에 height:100%;, .container의 부모 body에 height: 100vh를 줘야 한다.
+  */
+  height: 100%;
+}
+
+section article {
+  padding: 1em;
+}
+
+.navi {
+  background: lightpink;
+  /* .navi에 flex: 3;, .main에 flex:7;로 너비를 설정할 수도 있지만
+     그렇게 되면 브라우저가 커졌을 때 navi에서 쓸 때 없는 공간을 차지하게 되므로
+     navi에는 정확한 너비를 px부여해 움직이지 않게 픽싱하는 것이 좋다.
+     width: 300px;로 픽싱할 수도 있지만 flex-basis:300px;로 부여함으로 
+     후에 반응형 사용에 용이해진다.
+  */
+  flex-basis: 300px;
+}
+
+.main {
+  background: lightblue;
+  flex: 1;
+}

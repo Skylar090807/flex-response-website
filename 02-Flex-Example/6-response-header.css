@@ -1,0 +1,82 @@
+/* reset CSS */
+body {
+  margin: 0;
+  background: #eeedef;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+  padding: 20px;
+}
+
+header div {
+}
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  width: 8em;
+}
+
+.gnb {
+  font-size: 1.5em;
+  flex: 6;
+
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+
+.gnb a {
+  margin: 0 1em;
+}
+
+.search {
+  font-size: 1.5em;
+  flex: 1;
+  margin-top: 1em;
+}
+
+.search input {
+  padding: 1em;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .gnb a {
+    margin: 0 5px;
+  }
+
+  .search {
+    text-align: center;
+  }
+
+  .search input {
+    padding: 1em 3em;
+  }
+}

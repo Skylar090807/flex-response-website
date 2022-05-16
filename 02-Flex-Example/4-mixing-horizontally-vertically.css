@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+
+section article {
+  flex: 1;
+}
+
+.content1 {
+  background: lightyellow;
+  padding: 3em;
+}
+
+.content1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+}
+.sub1 {
+  background: lightblue;
+  flex: 1;
+  padding: 2em;
+}
+
+.sub2 {
+  background: lightpink;
+  flex: 1;
+  padding: 2em;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}

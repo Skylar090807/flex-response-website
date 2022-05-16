@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+nav {
+  background: #e6e2d7;
+  flex: 1;
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-col {
+  flex: 9;
+}
+
+header {
+}
+
+header,
+footer {
+  background: #a1905f;
+  height: 100px;
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+}
+
+.section-row {
+  display: flex;
+}
+
+article {
+  flex: 8;
+}
+
+aside {
+  background: #e6e2d7;
+  flex: 2;
+}
+
+article,
+aside {
+  height: calc(100vh - 200px);
+
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
