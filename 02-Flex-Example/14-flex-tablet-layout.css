@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.child {
+  background: lightblue;
+  text-align: center;
+  border-radius: 5px;
+  height: 200px;
+  margin: 5px;
+  line-height: 200px;
+  font-size: 3em;
+  /* flex: 1; */
+
+  flex-grow: 1;
+  flex-basis: 400px;
+  /* flex: 1 400px; */
+}
+
+/* flex-wrap을 pc버전에 전부 적용한 것과 다름 없지만, 
+   tablet, mobile 버전에 모두 세밀하게 적용 가능하다는 것을 명시하기 위해 
+   media-query 작성.
+*/
+
+/* tablet media-query */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .parent {
+    flex-wrap: wrap;
+  }
+}
+
+/* mobile media-query */
+@media (max-width: 767px) {
+  .parent {
+    flex-wrap: wrap;
+  }
+}

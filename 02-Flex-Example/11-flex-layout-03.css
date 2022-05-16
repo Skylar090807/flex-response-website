@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+nav {
+  background: #e6e2d7;
+  flex: 1;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5em;
+}
+
+.section-col {
+  flex: 8;
+}
+
+header {
+  background: #a1905f;
+  height: 100px;
+}
+
+.section-row {
+  display: flex;
+}
+
+.inner-col {
+  flex: 6;
+}
+
+article {
+  height: calc(100vh - 200px);
+}
+
+footer {
+  background: #a1905f;
+  height: 100px;
+}
+
+aside {
+  background: #e6e2d7;
+  flex: 1;
+}

@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background: #a1905f;
+}
+
+header,
+footer {
+  flex: 1;
+  height: 100px;
+}
+
+section {
+  display: flex;
+  height: calc(100vh - 200px);
+}
+
+nav {
+  background: #efebe4;
+  /* flex: 1; */
+
+  /* width로 px 지정해 고정하는 것과, flex-basis에 px로 고정하는 것은
+     큰 차이는 없지만 후에 반응형을 진행할 때 flex 속성으로 핸들링할 수 있기 때문에
+     반응형을 진행할 거라면 flex-basis로 너비를 고정하는 것이 낫다.
+  */
+  /* width: 250px; */
+  flex-basis: 250px;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  background: #efebe4;
+  /* flex: 1; */
+  /* width: 250px; */
+  flex-basis: 250px;
+}
+
+footer {
+  background: #a1905f;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+  /* text center 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5em;
+}

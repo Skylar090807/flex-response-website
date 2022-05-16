@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 5px solid #000; */
+  width: 1000px;
+}
+
+.card {
+  border: 2px solid gray;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 400px;
+
+  /* 카드의 text양과 상관 없이 항상 title은 상단에, image는 하단에 정렬 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  /* width:100%;로 주지 않으면 이미지가 넘쳐서 card-items 너비를 벗어난다. */
+  width: 100%;
+}

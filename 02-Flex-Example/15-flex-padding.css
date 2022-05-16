@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  border: 1px solid blue;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  border: 1px solid #000;
+  height: 150px;
+
+  width: 50%;
+  /* width: calc(100% / 4); */
+
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+}
+
+.child div {
+  background: lightblue;
+  flex: 1;
+
+  /* text center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
