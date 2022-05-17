@@ -1,0 +1,90 @@
+/* reset CSS */
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media {
+  display: flex;
+  background: #eee;
+  /* width: 600px; */
+  padding: 2em;
+  box-sizing: border-box;
+  margin-right: 1em;
+}
+
+.media:last-child {
+  margin-right: 0;
+}
+
+.media img {
+  width: 100px;
+  flex: 2;
+  margin-right: 2em;
+}
+
+.media-text {
+  flex: 3;
+}
+
+.media-text h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.text-content {
+  font-size: 1.5em;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+  .media {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .media:first-child {
+    margin-top: 0;
+  }
+
+  .media img {
+    width: 100%;
+  }
+
+  .media-text h3 {
+    margin-top: 1em;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .media {
+    width: 100%;
+    margin-top: 1em;
+  }
+}

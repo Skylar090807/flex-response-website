@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  background: #eee;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* reset CSS */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.login-form {
+  width: 600px;
+
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+
+  /* padding 때문에 크기가 변경되는 걸 원치 않으면 box-sizing사용 */
+  box-sizing: border-box;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+
+  /* box-shadow: x y spread color */
+  box-shadow: 0 0 20px gray;
+}
+
+.login-form h2 {
+}
+
+.sns-login {
+  margin: 20px 0;
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  margin-right: 6px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.facebook {
+  background: #30518f;
+}
+.twitter {
+  background: #49a8f6;
+}
+.google {
+  background: #e35c48;
+}
+.input-field {
+  display: flex;
+  font-size: 1.4em;
+  margin: 15px 0;
+}
+
+.input-field label {
+  flex: 1;
+}
+.input-field input {
+  flex: 4;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.btn-login {
+  padding: 5px 40px;
+  border: none;
+  font-size: 13px;
+  border-radius: 3px;
+  color: #fff;
+  background: royalblue;
+  float: right;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;
+  }
+  .sns-login {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  .input-field {
+    flex-direction: column;
+  }
+
+  .input-field input {
+    padding: 10px;
+  }
+
+  .btn-login {
+    float: none;
+    width: 100%;
+  }
+}
