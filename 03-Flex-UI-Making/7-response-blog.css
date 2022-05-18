@@ -1,0 +1,96 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* reset CSS */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-size: 15px;
+  font-weight: 300;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* section */
+section {
+  width: 1000px;
+  margin: auto;
+
+  display: flex;
+}
+
+.post {
+  display: flex;
+}
+
+.post:nth-child(odd) {
+  flex-direction: column;
+}
+
+.post:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.image {
+  width: 250px;
+}
+.image img {
+  width: 100%;
+  /* img tag는 inline요소이기 때문에 자체적으로 margin을 가지고 있다.
+     margin을 없애려면 img tag에 display:block; 으로 할당해주면 된다.
+  */
+
+  display: block;
+}
+.desc {
+  background: #079992;
+  color: #fff;
+  text-align: center;
+  height: 225px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc h2 {
+}
+
+.desc-text {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}

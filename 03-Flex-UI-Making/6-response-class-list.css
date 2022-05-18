@@ -1,0 +1,175 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* section */
+section {
+  width: 1200px;
+  margin: auto;
+
+  /* Full HD 1920
+     HD 1360
+     일반적 컨텐츠 영역 1200 ~ 1560
+  */
+}
+
+.class-header {
+}
+
+.class-header h1 {
+  font-size: 32px;
+}
+
+/* CSS에서 fontawesome 사용하기.
+   fontawesome에서 CSS Rule(content: '\f105';) 복사한다.
+   font-faimly: fontawesome;으로 지정한다.
+*/
+.class-header h1:after {
+  content: '\f105';
+  font-family: fontawesome;
+  margin-left: 10px;
+  color: #555;
+}
+
+.class-header div {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Items */
+.items {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin: 0;
+}
+
+/* item 상세 css */
+.item {
+}
+.item img {
+  width: 100%;
+}
+.item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.category {
+  font-weight: bold;
+  color: #70a1ff;
+}
+.stars {
+  margin: 5px 0;
+}
+.fa {
+  color: #f9ca24;
+}
+
+.stars em {
+  font-style: normal;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: bold;
+  color: #3742fa;
+  /* span tag는 inline 속성이므로 줄 바꿈을 위해서 display: block; 할당. */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.badge {
+  background: pink;
+  font-size: 14px;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+h5 {
+  color: crimson;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h5,
+.event-text {
+  font-size: 14px;
+}
+
+.badge.only {
+  background: yellowgreen;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+
+  .item {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .item:nth-child(1) {
+    order: 2;
+  }
+  .item:nth-child(2) {
+    order: 3;
+  }
+  .item:nth-child(3) {
+    order: 4;
+  }
+  .item:nth-child(4) {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}

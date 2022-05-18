@@ -8,6 +8,11 @@ body {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* reset CSS */
@@ -34,4 +39,145 @@ select,
 button {
   outline: none;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+section {
+  width: 1200px;
+  margin: auto;
+  /* 수평 중앙 정렬 시 margin:auto;를 주거나 section 부모인 body에
+     display: flex;
+     justify-content:center;
+  */
+  /* border: 1px solid #000; */
+
+  margin-top: 20px;
+}
+
+/* consulting-header */
+.consulting-header {
+  text-align: center;
+}
+
+.consulting-header h1 {
+  font-size: 32px;
+}
+
+.consulting-header h1 span {
+  color: crimson;
+}
+
+.consulting-header hr {
+  border: none;
+  width: 100px;
+  height: 3px;
+  background: skyblue;
+  margin: 25px auto;
+}
+
+.consulting-description {
+  margin-bottom: 10px;
+}
+
+/* consulting-form */
+.consulting-form form {
+  border-top: 5px solid #ddd;
+  padding: 30px;
+}
+
+.consulting-form form label em {
+  color: red;
+  font-style: normal;
+}
+
+.row {
+  display: flex;
+  margin: 15px 0;
+}
+.row .field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.row .field label {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.row .field input,
+.row .field textarea,
+.row .field select {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 7px;
+  transition: 0.3s;
+}
+
+.row .field input:hover,
+.row .field select:hover,
+.row .field textarea:hover {
+  border: 1px solid skyblue;
+  box-shadow: 0 0 5px skyblue;
+}
+
+.row .field input:focus,
+.row .field textarea:focus {
+  background-color: #eee;
+}
+
+/* policy */
+
+.policy h4 {
+  margin-bottom: 15px;
+}
+.policy iframe {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 96%;
+  height: 100px;
+  padding: 7px;
+}
+
+.btn-submit {
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #fff;
+  padding: 7px 50px;
+
+  /* button요소는 inline-block 이므로 margin:auto;가 적용되지 않는다.
+     margin: auto;로 수평 중앙 정렬하고 싶을 땐 display: block;이라고 명시하면
+     margin:auto;가 적용된다.
+  */
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.btn-submit:hover {
+  background: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .consulting-header h1 {
+    font-size: 22px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .field {
+    margin: 10px 0;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
 }
