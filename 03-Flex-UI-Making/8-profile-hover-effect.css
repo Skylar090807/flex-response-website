@@ -1,0 +1,163 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+/* container */
+
+.container {
+  display: flex;
+}
+
+.card {
+  margin: 10px;
+  position: relative;
+  /* image size 만큼 높이와 너비를 지정했다. */
+  width: 300px;
+  height: 400px;
+
+  /* 자식 요소에서 top:100%;를 가졌으므로 부모인 card 아래로 .content가 보인다.
+     보이지 않게하기 위해서 overflow:hidden;을 해준다. 
+  */
+  overflow: hidden;
+  transition: 0.5s;
+
+  border-radius: 10px;
+}
+
+.card img {
+}
+
+.content {
+  /* poposition: absolute;를 주게되면 inline이나 block요소가 inline-block이 된다.
+     때문에 width, height를 지정해줘야 한다.
+  */
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  /* top을 100% 준 것의 의미는 부모 요소가 height:400px; 이므로 
+     top: 400px; 준 것과 같다. 부모 요소만큼 top을 지정하면 부모 높이만큼 아래로 내려간다.
+  */
+  /* CSS를 편하게 하기 할 때는 top:0;으로 지정해주면 된다. */
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  /* background: linear-gradient(to top, crimson, transparent); */
+  color: #fff;
+  text-align: center;
+  padding-top: 180px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+/* content에 background로 그라데이션을 줬기 때문에 
+   content마다 다른 컬러로 그라데이션을 줄 때
+   content:nth-child(1) 이렇게 각각 그라데이션을 주면 된다고 생각하기 쉽다.
+   그러나 content의 nth-child를 부르면 적용되지 않는다.
+   content의 부모 요소인 card:nth-child(1) .content로 불러야 각각 적용된다.
+*/
+.card:nth-child(1) .content {
+  background: linear-gradient(to top, crimson, transparent);
+}
+.card:nth-child(2) .content {
+  background: linear-gradient(to top, dodgerblue, transparent);
+}
+.card:nth-child(3) .content {
+  background: linear-gradient(to top, yellowgreen, transparent);
+}
+
+.card:hover .content {
+  top: 0;
+}
+
+.card:hover {
+  /* mose-over했을 때 전체적으로 커진다. */
+  /* transform: scale(1.1); */
+
+  /* 좌표에서 음수는 Y일 때 위로 가거나 X일 때 왼쪽으로 간다. */
+  transform: translateY(-20px);
+
+  /* box-shadow 주기. */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.21);
+}
+
+.content h2 {
+  font-weight: 500;
+}
+
+/* h2 tag 안에 span tag의 line을 바꾸고 싶을 때 display:block;을 주면 된다. */
+.content h2 span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: gold;
+  margin-top: 10px;
+}
+
+.content-description {
+  margin-top: 20px;
+}
+
+.sns {
+  margin-top: 20px;
+}
+
+/* a tag는 inline 요소이기 때문에 width, height를 지정할 수 없다.
+   block요소로 만들고 싶을 때 display: block을 하면 줄 바꿈이 생기기 때문에
+   display: inline-block; 해준다.
+*/
+.sns a {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+}

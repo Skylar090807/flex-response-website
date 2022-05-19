@@ -1,0 +1,534 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+input, button, textarea {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Common CSS */
+.inner {
+  width: 1300px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 10000;
+}
+.banner {
+  background-color: #000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.lnb {
+  width: 1300px;
+  margin: auto;
+  text-align: right;
+}
+.lnb a {
+  color: #ddd;
+  margin: 10px;
+}
+.lnb a:last-child {
+  margin: 0;
+}
+.lnb a em {
+  color: #bbb;
+}
+
+nav {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo {}
+.gnb {
+  display: flex;
+}
+.gnb li {}
+.gnb li a {
+  margin: 20px;
+  color: #fff;
+}
+.gnb li a:hover {
+  color: #333;
+}
+.gnb li a:last-child {
+  margin-right: 0;
+}
+
+.trigger {
+  display: none;
+}
+
+/* Header with active class */
+header.active {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+header.active .gnb li a {
+  color: #000;
+}
+header.active .banner {
+  height: 0;
+  overflow: hidden;
+}
+header.active nav {
+  padding-bottom: 20px;
+}
+
+.gototop {
+  background: linear-gradient(45deg, skyblue, #c1e4f2);
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: -20px;
+  opacity: 0;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.gototop.active {
+  bottom: 20px;
+  opacity: 1;
+}
+
+
+/* Intro */
+.intro {
+  height: 100vh;
+  background: url(images/intro.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+.heading p {
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 150px;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  padding: 150px 0;
+}
+.about-content div {
+  padding: 30px;
+}
+.desc {
+  text-align: center;
+  flex: 3;
+}
+.desc h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.desc p {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+.desc a {
+  color: #c25a3a;
+  font-weight: bold;
+}
+.desc a:hover {
+  text-decoration: underline;
+}
+.photo {
+  flex: 2;
+}
+.photo img {
+  width: 100%;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+}
+
+/* Ranking Section */
+.ranking {
+  background-color: #f8f8f8;
+}
+.ranking-content {
+  padding: 100px 0;
+}
+.ranking-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.items {
+  display: flex;
+  justify-content: space-between
+}
+.item {
+  width: 390px;
+  height: 600px;
+  border-radius: 30px 0 30px 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.up-image {
+  width: 390px;
+  height: 285px;
+}
+.up-image img {
+/*  width: 100%;*/
+  height: 100%;
+}
+.down-desc {
+  padding: 25px;
+  padding-top: 50px;
+}
+.down-desc h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  /*letter-spacing: -1px;*/
+}
+.down-desc p {
+  font-size: 16px;
+}
+.btn-explore {
+  color: #c25a3a;
+  font-weight: 500;
+}
+.btn-explore img {
+  transition: 0.3s;
+}
+.btn-explore:hover img {
+  /*transform: translateX(15px);*/
+  margin-left: 15px;
+}
+.badge {
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 16px;
+}
+.badge.must {
+  background-color: #e60012; 
+}
+.badge.good {
+  background-color: #00a0e9;
+}
+
+/* Testimonial Section */
+.testimonial {
+  padding: 100px 0;
+}
+.testimonial-content {
+  text-align: center;
+}
+.testimonial-content h2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.testimonial-content h2 b {}
+.testimonial-content hr {
+  border: none;
+  height: 4px;
+  width: 120px;
+  background-color: #1c45e3;
+  margin: 30px auto;
+}
+.myslider {}
+.myslider div {
+  outline: none;
+}
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.client img {
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.client span {
+  display: block;
+  /*width: 100%;*/
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.client span b {
+  display: block;
+}
+.comment {
+  font-size: 16px;
+  line-height: 1.6em;
+  padding-right: 25px;
+}
+
+/* CallAction Section */
+.callaction {
+  height: 450px;
+  background: url(images/callaction-01.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.callaction:before {
+  content: '';
+  background: linear-gradient(to right, rgba(160, 8, 160, 0.5), rgba(6, 87, 24, 0.8));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.callaction-heading {
+  text-align: center;
+  position: relative;
+}
+.callaction-heading h2 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.3em;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+.callaction-heading h2 b {
+  font-weight: 500;
+}
+.callaction-heading a {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Blog Section */
+.blog {
+  padding: 100px 0;
+}
+.post-content {
+  display: flex;
+  justify-content: space-between;
+}
+.post-content div {}
+.recent-post-items {
+  flex: 2;
+}
+.shared-post-items {
+  width: 360px;
+}
+
+.blog-header h6,
+.recent-post-items h6,
+.shared-post-items h6 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #00a0e9;
+}
+.recent-post-items h6,
+.shared-post-items h6{
+  color: #000;
+  margin-bottom: 30px;
+}
+.blog-header h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 50px 0;
+  font-weight: 600;
+}
+.blog-header p {
+  font-size: 28px;
+  line-height: 1.6em;
+}
+
+hr.divider {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 50px 0;
+}
+.post-content hr.divider {
+  margin: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: row;
+}
+.shared-post-items .post-item {
+  flex-direction: column;
+}
+.post-item div {}
+.post-image {
+  width: 360px;
+  border-radius: 30px 0 30px 0;
+  overflow: hidden;
+}
+.post-image img {
+  width: 100%;
+}
+.post-desc {
+  flex: 3;
+  padding: 0 20px;
+}
+.shared-post-items .post-desc {
+  padding: 0;
+}
+.post-desc h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.post-desc p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+.post-desc p span {
+  font-size: 14px;
+  color: #6d6d6d;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Festival Section */
+.festival {
+  height: 270px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.festival-heading {
+  text-align: center;
+}
+.festival-heading h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.festival-heading h3 span {
+  font-weight: 500;
+}
+.btns a {
+  background-color: #fff;
+  width: 200px;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btns a:nth-child(1) {
+  background-color: #fac53b;
+  color: #fff;
+}
+.btns a:nth-child(2) {
+  background-color: #ededed;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 30px 0;
+}
+.footer-content {
+  display: flex;
+}
+.footer-content ul {
+  text-align: center;
+}
+.footer-content ul li:first-child {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.footer-content ul li a {
+  color: #959595;
+}
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+.community {
+  flex: 1;
+}
+.network {
+  flex: 1;
+}
+.help {
+  flex: 2;
+}
+.help li {
+  color: #959595;
+}
+.help li:last-child {
+  margin-top: 35px;
+  color: #eee;
+}
+
+/* 
+  슬릭 슬라이더의 버튼이 모바일 화면에서 미세하게 좌우로 위치해서 미세한 가로스크롤이 생깁니다. 이걸 방지하는 방법은 아래의 코드를 넣어주면 됩니다. 모바일에서 드래그를 하면 편하기 때문에 슬릭 슬라이더 버튼을 사용하지 않아도 됩니다. display: none 을 넣기 전에 border를 그려보시면 이해가 쉬우실 거에요. 물론 슬릭 슬라이더 버튼을 모바일에서 사용할거면 좌우 버튼을 안쪽으로 넣어주시면 됩니다.
+*/
+
+/* Slick.js */
+button.slick-arrow {
+  /* border: 1px solid #000; */
+  display: none !important;
+}
+
+
+
