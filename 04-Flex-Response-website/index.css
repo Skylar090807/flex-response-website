@@ -1,0 +1,140 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* font-weight: 500;은 bold보다 연하고 normal보다 진하다 */
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+input,
+button,
+texarea {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Common CSS */
+.inner {
+  width: 1300px;
+  margin: auto;
+}
+
+/* .container 전체 wrapper */
+.container {
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background: #000;
+  /* height: 40px; */
+  padding: 10px 0;
+}
+.lnb {
+  width: 1300px;
+  margin: auto;
+  text-align: end;
+}
+.lnb a {
+  margin-right: 10px;
+  color: #ddd;
+}
+.lnb a:last-child {
+  margin: 0;
+}
+.lnb a em {
+  color: #bbb;
+  margin-right: 5px;
+}
+
+/* nav Navigation */
+nav {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo {
+}
+.logo img {
+}
+.gnb {
+}
+
+.gnb a {
+  margin-right: 20px;
+  color: #fff;
+}
+.gnb a:hover {
+  color: #333;
+}
+.gnb a:last-child {
+  margin: 0;
+}
+
+/* Main .intro */
+.intro {
+  height: 100vh;
+  background: url(assets/images/intro.jpg) no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+.heading-text {
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 150px;
+}
