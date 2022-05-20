@@ -24,12 +24,19 @@ body {
 a {
   text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: 500;
   line-height: 1.3em;
 }
-input, button, textarea {
+input,
+button,
+textarea {
   outline: none;
 }
 button {
@@ -85,11 +92,13 @@ nav {
   align-items: center;
   margin-top: 20px;
 }
-.logo {}
+.logo {
+}
 .gnb {
   display: flex;
 }
-.gnb li {}
+.gnb li {
+}
 .gnb li a {
   margin: 20px;
   color: #fff;
@@ -140,7 +149,6 @@ header.active nav {
   bottom: 20px;
   opacity: 1;
 }
-
 
 /* Intro */
 .intro {
@@ -213,7 +221,7 @@ header.active nav {
 }
 .items {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 .item {
   width: 390px;
@@ -228,7 +236,7 @@ header.active nav {
   height: 285px;
 }
 .up-image img {
-/*  width: 100%;*/
+  /*  width: 100%;*/
   height: 100%;
 }
 .down-desc {
@@ -260,7 +268,7 @@ header.active nav {
   font-size: 16px;
 }
 .badge.must {
-  background-color: #e60012; 
+  background-color: #e60012;
 }
 .badge.good {
   background-color: #00a0e9;
@@ -278,7 +286,8 @@ header.active nav {
   font-weight: 300;
   text-transform: uppercase;
 }
-.testimonial-content h2 b {}
+.testimonial-content h2 b {
+}
 .testimonial-content hr {
   border: none;
   height: 4px;
@@ -286,14 +295,15 @@ header.active nav {
   background-color: #1c45e3;
   margin: 30px auto;
 }
-.myslider {}
+.myslider {
+}
 .myslider div {
   outline: none;
 }
 .client {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 .client img {
   width: 85px;
@@ -364,7 +374,8 @@ header.active nav {
   display: flex;
   justify-content: space-between;
 }
-.post-content div {}
+.post-content div {
+}
 .recent-post-items {
   flex: 2;
 }
@@ -380,7 +391,7 @@ header.active nav {
   color: #00a0e9;
 }
 .recent-post-items h6,
-.shared-post-items h6{
+.shared-post-items h6 {
   color: #000;
   margin-bottom: 30px;
 }
@@ -412,7 +423,8 @@ hr.divider {
 .shared-post-items .post-item {
   flex-direction: column;
 }
-.post-item div {}
+.post-item div {
+}
 .post-image {
   width: 360px;
   border-radius: 30px 0 30px 0;
@@ -529,6 +541,3 @@ button.slick-arrow {
   /* border: 1px solid #000; */
   display: none !important;
 }
-
-
-

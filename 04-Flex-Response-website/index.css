@@ -62,6 +62,7 @@ ul {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .banner {
   width: 100%;
@@ -189,8 +190,162 @@ nav {
 }
 
 /* Ranking Section  */
+.ranking {
+  background: #f8f8f8;
+}
+.ranking-content {
+  padding: 100px 0;
+}
+.ranking-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  width: 390px;
+  height: 600px;
+  border-radius: 30px 0 30px 0;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.item-image {
+  width: 390px;
+  height: 285px;
+}
+.item-image img {
+  /* width: 100%; */
+  height: 100%;
+}
+.item-desc {
+  padding: 25px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.item-desc span {
+  margin-top: 30px;
+  width: fit-content;
+
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.badge-red {
+  background: crimson;
+}
+.badge-blue {
+  background: #0984e3;
+}
+
+.item-desc h3 {
+  margin: 15px 0;
+  font-size: 22px;
+}
+.item-desc p {
+}
+.item-desc a {
+  color: crimson;
+  font-weight: bold;
+}
+.item-desc a:hover {
+  font-size: 18px;
+}
+.item-desc a img {
+  transition: 0.5s;
+}
+.item-desc a:hover img {
+  transform: translateX(10px);
+}
 
 /* Testmonial Section */
+.testmonial {
+  padding: 100px 0;
+}
+.testmonial-content {
+  text-align: center;
+}
+.testmonial-content h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+.testmonial-content h2 b {
+}
+.testmonial-content hr {
+  border: none;
+  height: 4px;
+  width: 120px;
+  background: #ddd;
+  margin: 20px auto;
+  display: inline-block;
+}
+.myslider {
+}
+.myslider div {
+  outline: none;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client img {
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.client span {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.client span b {
+  display: block;
+}
+.myslider div p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* slick js slick-dots custom */
+.slick-slider {
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots button {
+  width: 10px;
+  height: 10px;
+  outline: none;
+  border: none;
+  margin: 7px;
+  /* border-radius: 50%; */
+  background: #ddd;
+  color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots .slick-active button {
+  background: #000;
+}
+
+.slick-active {
+}
 
 /* CallAction Section */
 .callaction {
@@ -238,6 +393,11 @@ nav {
   border-radius: 6px;
 }
 
+.callaction-heading a:hover {
+  background: #fff;
+  color: #079992;
+}
+
 /* Blog Section */
 
 /* Festival Section */
@@ -276,8 +436,16 @@ nav {
 .maxico {
   background: #fac53b;
 }
+.maxico:hover {
+  background: #000;
+  color: #fac53b;
+}
 .barcelona {
   background: #ededed;
+}
+.barcelona:hover {
+  background: #222;
+  color: #ededed;
 }
 
 /* Footer */

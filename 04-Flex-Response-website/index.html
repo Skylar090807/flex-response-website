@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Slick JS CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- font-awesome 4.7.0 CDN -->
     <link
       rel="stylesheet"
@@ -14,9 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- JS -->
+    <script src="./Js/slick.js"></script>
+    <!-- css (css file link는 항상 하단으로 보낸다.) -->
     <link rel="stylesheet" href="./index.css" />
     <title>Flex Website</title>
   </head>
+
   <body>
     <!-- 일반적 컨텐츠 영역 1280px ~ 1560px  -->
 
@@ -84,11 +92,146 @@
         </div>
       </section>
       <section class="ranking">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="ranking-content">
+            <h2>The World’s 25 Best Cities of 2020</h2>
+            <div class="items">
+              <div class="item">
+                <div class="item-image">
+                  <img src="./assets/images/best-city-01.jpg" alt="city image" />
+                </div>
+                <div class="item-desc">
+                  <span class="badge-red">Must go</span>
+                  <h3>London, England</h3>
+                  <p>
+                    London’s main sights might date back millennia, but the capital’s shops, bars, hotels, and
+                    restaurants emerge and evolve on an almost weekly basis.
+                  </p>
+                  <a href="#">Explore <img src="./assets/images/icon-arrow.png" alt="arrow icon" /></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
+                  <img src="./assets/images/best-city-02.jpg" alt="city image" />
+                </div>
+                <div class="item-desc">
+                  <span class="badge-blue">Good to go</span>
+                  <h3>New York City, United States</h3>
+                  <p>
+                    New York’s performing arts scene—both on Broadway and off—is beloved by visitors and locals alike,
+                    so it’s no surprise that the Big Apple took the number one spot.
+                  </p>
+                  <a href="#">Explore <img src="./assets/images/icon-arrow.png" alt="arrow icon" /></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
+                  <img src="./assets/images/best-city-03.jpg" alt="city image" />
+                </div>
+                <div class="item-desc">
+                  <span class="badge-blue">Good to go</span>
+                  <h3>Paris, France</h3>
+                  <p>
+                    Paris, France The Notre Dame fire was a devastating reminder of how well-loved Paris is by travelers
+                    worldwide, and as the capital gears up for the 2024 Olympics
+                  </p>
+                  <a href="#">Explore <img src="./assets/images/icon-arrow.png" alt="arrow icon" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section class="testmonial">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="testmonial-content">
+            <h2>WHAT <b>OUR CUSTOMERS</b> ARE SAYING</h2>
+            <hr />
+            <div class="myslider">
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-01.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-02.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-03.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-04.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-05.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+              <div>
+                <div class="client">
+                  <img src="./assets/images/client-06.jpg" alt="client image" />
+                  <span><b>Coding Works</b>Seoul, Korea</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate adipisci culpa ut. Tempora
+                  modi porro, laboriosam quisquam dignissimos sequi? Aut ab voluptatem rerum fuga quod vitae debitis.
+                  Animi dicta ipsum alias reiciendis perferendis fugiat! Reiciendis, aperiam consequuntur. Laboriosam
+                  reiciendis fugit iste aspernatur ducimus voluptate voluptatibus dignissimos! Recusandae, pariatur
+                  laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section class="callaction">
         <div class="callaction-heading">
           <h2>The Most Simple & <span>Powerful Way</span><br />to book <span>your trip</span></h2>
