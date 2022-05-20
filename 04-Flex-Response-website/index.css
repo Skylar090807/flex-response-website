@@ -318,8 +318,17 @@ nav {
 
 /* slick js slick-dots custom */
 .slick-slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.slick-arrow {
+  /* color: transparent; */
+}
+
 .slick-dots {
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
