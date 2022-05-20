@@ -241,5 +241,88 @@ nav {
 /* Blog Section */
 
 /* Festival Section */
+.festival {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background: #333;
+}
+.festival-heading {
+}
+.festival-heading h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 26px;
+}
+.festival-heading h2 span {
+  font-weight: 500;
+}
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button-wrap a {
+  /* a tag에 width를 주려면 inline-block으로 만들어줘야 한다. */
+  /* display: inline-block; */
+
+  margin: 10px;
+  padding: 6px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 400;
+}
+.maxico {
+  background: #fac53b;
+}
+.barcelona {
+  background: #ededed;
+}
 
 /* Footer */
+footer {
+  background: #000;
+  padding: 30px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  text-align: center;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.footer-col h3 {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.footer-col a {
+  color: #959595;
+  transition: 0.5s;
+}
+.footer-col a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.copy-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+.copy-wrap h3 {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.copy-wrap-desc {
+  color: #959595;
+}
+.copy {
+  color: #eee;
+  margin-top: 35px;
+}
