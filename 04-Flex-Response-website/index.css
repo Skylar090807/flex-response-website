@@ -316,15 +316,37 @@ nav {
   line-height: 1.6em;
 }
 
+/* slick arrow custom */
+.testmonial{
+  position:relative;
+}
+
+.arrow-wrap{
+  font-size:3em;
+  cursor: pointer;
+}
+.arrow_prev{
+  position:absolute;
+  top:300px;
+  left:100px;
+}
+.arrow_next{
+  position:absolute;
+  top:300px;
+  right:100px;
+}
+
+/* slick slider custom */
+.myslider div .slick-center {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
 /* slick js slick-dots custom */
 .slick-slider {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.slick-arrow {
-  /* color: transparent; */
 }
 
 .slick-dots {
@@ -483,7 +505,7 @@ footer {
 }
 .footer-col a:hover {
   transform: scale(1.1);
-  text-decoration: underline;
+  
 }
 
 .copy-wrap {
