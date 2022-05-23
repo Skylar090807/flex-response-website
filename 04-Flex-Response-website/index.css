@@ -66,13 +66,14 @@ header {
   transition: 0.5s;
 }
 .banner {
-  width: 100%;
+  /* width: 100%; */
   margin: auto;
   display: flex;
   align-items: center;
   background: #000;
-  /* height: 40px; */
-  padding: 10px 0;
+  height: 40px;
+  /* padding: 10px 0; */
+  transition: 0.5s;
 }
 .lnb {
   width: 1300px;
@@ -98,7 +99,10 @@ header.active {
 }
 
 header.active .banner {
-  display: none;
+  /* display: none; */
+  /* display none은 transition을 줄 수 없다. */
+  height: 0;
+  overflow: hidden;
 }
 
 header.active nav {
@@ -153,6 +157,31 @@ nav {
 }
 .gnb a:last-child {
   margin: 0;
+}
+
+/* Go to Top */
+.goToTop {
+  /* a tag는 크기 값을 가질 수 없지만,
+     position: fixed;하는 순간에 inline-block으로 바뀌면서 크기 값을 가질 수 있다.
+  */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 50px;
+  bottom: -50px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+  background: rgba(38, 137, 208, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.goToTop.active {
+  opacity: 1;
+  bottom: 50px;
 }
 
 /* Main .intro */

@@ -1,7 +1,7 @@
 $(document).ready(() => {
   // scroll down 시 active class 추가
   $(window).on('scroll', () => {
-    $(window).scrollTop() > 50 ? $('header').addClass('active') : $('header').removeClass('active')
+    $(window).scrollTop() > 50 ? $('header, .goToTop').addClass('active') : $('header, .goToTop').removeClass('active')
   })
 
   // slick slider
