@@ -1,12 +1,56 @@
 /* mobile */
 @media (max-width: 768px) {
+  /* Header */
   header {
   }
+  .banner{
+    display: none;
+  }
+  .lnb{
+    width:100%;
+    text-align:center;
+  }
+   nav {
+     width:100%;
+     padding:0 20px;
+   }
+   .gnb {}
+  /* Common CSS */
   .inner {
     width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
   }
+  /* Intro */
+  .heading h1{
+    font-size:40px;
+  }
+  .heading-text{
+    padding: 0;
+  }
+  /* About-content */
   .about-content {
     flex-direction: column;
-    padding: 150px 0;
+    padding: 50px 0;
   }
+  .about-content div{
+    padding: 10px;
+  }
+  /* Ranking Section */
+  .ranking-content{
+    padding: 50px 0;
+  }
+  .items{
+    flex-direction: column;
+  }
+  .item{
+    width:100%;
+    border-radius:7px;
+    margin-bottom:25px;
+  }
+  .item-image{
+    width:100%;
+    
+  }
+
 }

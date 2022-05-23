@@ -37,9 +37,15 @@ h6 {
   line-height: 1.3em;
 }
 
+ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
 input,
 button,
-texarea {
+textarea {
   outline: none;
 }
 button {
@@ -64,13 +70,10 @@ header {
   transition: 0.5s;
 }
 .banner {
-  /* width: 100%; */
-  margin: auto;
+  background-color: #000;
+  height: 40px;
   display: flex;
   align-items: center;
-  background: #000;
-  height: 40px;
-  /* padding: 10px 0; */
   transition: 0.5s;
 }
 .lnb {
@@ -143,6 +146,7 @@ nav {
 .logo img {
 }
 .gnb {
+  display: flex;
 }
 
 .gnb a {
@@ -415,7 +419,7 @@ nav {
 }
 
 .slick-dots {
-  display: block;
+  /* display: block; */
   display: flex;
   justify-content: center;
   align-items: center;
