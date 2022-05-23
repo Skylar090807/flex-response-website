@@ -6,7 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Plain CSS로 scroll smooth하게 만들기 */
 html {
+  /* scroll-behavior는 IE에서 적용되지 않는다. */
+  scroll-behavior: smooth;
 }
 
 body {
