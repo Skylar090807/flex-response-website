@@ -104,13 +104,28 @@ header.active nav {
   padding-bottom: 20px;
 }
 
+/* navigation hover 시 underline animation */
 header.active .gnb a {
+  /* position: relative; */
   color: #000;
-  /* transition: 0.3s; */
 }
 
+/* header.active .gnb a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: 0.3s;
+} */
+
 header.active .gnb a:hover {
-  transform: scale(1.1);
+  /* width: 100%; */
+  color: #222;
+  font-weight: 500;
 }
 
 /* nav Navigation */
