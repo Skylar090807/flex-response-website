@@ -90,6 +90,29 @@ header {
   margin-right: 5px;
 }
 
+/* header with actice class */
+header.active {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header.active .banner {
+  display: none;
+}
+
+header.active nav {
+  padding-bottom: 20px;
+}
+
+header.active .gnb a {
+  color: #000;
+  /* transition: 0.3s; */
+}
+
+header.active .gnb a:hover {
+  transform: scale(1.1);
+}
+
 /* nav Navigation */
 nav {
   width: 1300px;
@@ -524,6 +547,10 @@ nav {
 
 .shared-items .recent-item-desc {
   padding: 0;
+}
+
+.shared-heading {
+  margin: 10px 0;
 }
 
 /* Festival Section */
