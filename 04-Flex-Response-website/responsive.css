@@ -1,0 +1,12 @@
+/* mobile */
+@media (max-width: 768px) {
+  header {
+  }
+  .inner {
+    width: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+    padding: 150px 0;
+  }
+}

@@ -9,7 +9,7 @@
 /* Plain CSS로 scroll smooth하게 만들기 */
 html {
   /* scroll-behavior는 IE에서 적용되지 않는다. */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -44,11 +44,6 @@ texarea {
 }
 button {
   cursor: pointer;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 /* Common CSS */
