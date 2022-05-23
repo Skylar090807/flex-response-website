@@ -63,6 +63,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: 0.5s;
 }
 .banner {
   width: 100%;
@@ -106,26 +107,24 @@ header.active nav {
 
 /* navigation hover 시 underline animation */
 header.active .gnb a {
-  /* position: relative; */
+  position: relative;
   color: #000;
 }
 
-/* header.active .gnb a:after {
+header.active .gnb a:after {
   content: '';
   position: absolute;
-  width: 0;
+  width: 0%;
   height: 2px;
   background-color: #000;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: -15px;
   transition: 0.3s;
-} */
+}
 
-header.active .gnb a:hover {
-  /* width: 100%; */
-  color: #222;
-  font-weight: 500;
+header.active .gnb a:hover:after {
+  width: 100%;
 }
 
 /* nav Navigation */
@@ -147,6 +146,7 @@ nav {
 .gnb a {
   margin-right: 20px;
   color: #fff;
+  transition: 0.5s;
 }
 .gnb a:hover {
   color: #333;

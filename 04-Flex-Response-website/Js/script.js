@@ -1,5 +1,10 @@
-// auto slide
-$(document).ready(function () {
+$(document).ready(() => {
+  // scroll down 시 active class 추가
+  $(window).on('scroll', () => {
+    $(window).scrollTop() > 50 ? $('header').addClass('active') : $('header').removeClass('active')
+  })
+
+  // slick slider
   $('.myslider').slick({
     centerMode: true,
     centerPadding: '60px',
