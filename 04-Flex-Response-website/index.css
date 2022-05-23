@@ -303,6 +303,7 @@ nav {
   margin-right: 15px;
 }
 .client span {
+  /* width:100%; */
   display: block;
   text-align: left;
   font-size: 18px;
@@ -317,30 +318,29 @@ nav {
 }
 
 /* slick arrow custom */
-.testmonial{
-  position:relative;
+.testmonial {
+  position: relative;
 }
 
-.arrow-wrap{
-  font-size:3em;
+.arrow-wrap {
+  font-size: 3em;
   cursor: pointer;
 }
-.arrow_prev{
-  position:absolute;
-  top:300px;
-  left:100px;
+.arrow_prev {
+  position: absolute;
+  top: 300px;
+  left: 50px;
 }
-.arrow_next{
-  position:absolute;
-  top:300px;
-  right:100px;
+.arrow_next {
+  position: absolute;
+  top: 300px;
+  right: 50px;
 }
 
 /* slick slider custom */
 .myslider div .slick-center {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
 }
-
 
 /* slick js slick-dots custom */
 .slick-slider {
@@ -430,6 +430,101 @@ nav {
 }
 
 /* Blog Section */
+.blog {
+  padding: 100px;
+}
+.blog-content {
+}
+.blog-content div {
+}
+.blog-header {
+  display: flex;
+  flex-direction: column;
+}
+.blog-header h6,
+.recent-items h6,
+.shared-items h6 {
+  font-size: 16px;
+  color: #00a0e9;
+}
+.blog-header h2 {
+  font-size: 48px;
+  margin: 50px 0;
+}
+.blog-header p {
+  font-size: 28px;
+  line-height: 1.6em;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 50px 0;
+}
+.post-content {
+  display: flex;
+  justify-content: space-between;
+}
+.post-content div {
+}
+
+.post-content .divider {
+  margin: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+.recent-items {
+  flex: 2;
+}
+.recent-items h6 {
+  color: #000;
+  margin-bottom: 30px;
+}
+.recent-item {
+  display: flex;
+}
+.recent-item-image {
+  /* flex: 2; */
+  width: 360px;
+  border-radius: 30px 0 30px 0;
+  overflow: hidden;
+}
+.recent-item-image img {
+  width: 100%;
+  display: block;
+}
+.recent-item-desc {
+  flex: 3;
+  padding: 0 20px;
+}
+.recent-item-desc h3 {
+  font-size: 24px;
+}
+.recent-item-desc p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+.date {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.shared-items {
+  /* flex: 1; */
+  width: 360px;
+}
+.shared-items h6 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.shared-items .recent-item {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.shared-items .recent-item-desc {
+  padding: 0;
+}
 
 /* Festival Section */
 .festival {
@@ -505,7 +600,6 @@ footer {
 }
 .footer-col a:hover {
   transform: scale(1.1);
-  
 }
 
 .copy-wrap {
