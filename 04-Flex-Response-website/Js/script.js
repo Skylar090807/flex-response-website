@@ -5,9 +5,9 @@ $(document).ready(() => {
     $('.gnb').toggleClass('active')
   })
   // Trigger .gnb a 클릭 시 해당 위치로 스크롤 후 네비게이션 닫힘.
-  // $('.gnb a').on('click', function () {
-  //   $('.gnb, .trigger').removeClass('active')
-  // })
+  $('.gnb a').on('click', function () {
+    $('.gnb, .trigger').removeClass('active')
+  })
 
   // jQuery.scrollTo
   $('.gnb a, .goToTop').on('click', function (e) {
